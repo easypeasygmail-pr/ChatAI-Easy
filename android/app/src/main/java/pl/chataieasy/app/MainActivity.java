@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
                         launched = true;
                         new TrustedWebActivityIntentBuilder(Uri.parse(HOME))
                             .build(session)
-                            .launchActivity(MainActivity.this);
+                            .launchTrustedWebActivity(MainActivity.this);
                     } catch (Exception error) {
                         launched = false;
                         openCustomTab();
